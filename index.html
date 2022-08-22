@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./develop/style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+        <title>Dora's Weather Forcast</title>
+    </head>
+    <body>
+        <div class="title">Dora's Weather Forcast Dashboard</div>
+        <section class="leftside-wrapper">
+            <h2>Search for a City:</h2>
+            <input type="search" id="cityQuery" name="q" placeholder="Search...">
+            <button type="button" id="search-btn"><i class="fas fa-search-location"></i></button>
+            <div class="history-wrapper"></div>
+        </section> 
+        <section class="weather-wrapper">
+            <div id="main-city-wrapper">
+                <div class="main-city">
+                    <div class="mainStyle" style="display:flex;">
+                        <h2 id="main-city-display"></h2>
+                        <span style="margin-left:5px;" id="todaysdate"></span>
+                        <img src="" id="main-image">
+                    </div>
+                    <lable for="main-city-temp">Temp:</lable>
+                    <span id="main-city-temp"></span><br><br>
+                    <lable for="main-city-wind">Wind:</lable>
+                    <span id="main-city-wind"></span><br><br>
+                    <lable for="main-city-humidity">Humidity:</lable>
+                    <span id="main-city-humidity"></span><br><br>
+                    <lable for="main-city-UVindex">UV Index:</lable>
+                    <span id="main-city-UVindex"></span><br>
+                </div>
+            </div>
+            <div class="five-day-weather-wrapper">
+                <h2>Five-Day Forecast:</h2>
+                <div class="five-day-weather">
+                    <card class="cards" id="dayOne">
+                        <p class="weather" id="day1"></p>
+                        <img src="" id="day1img">
+                        <p class="temp" id="day1temp">Loading....</p>
+                        <p class="wind" id="day1wind">Loading....</p>
+                        <p class="humidity" id="day1humidity">Loading....</p>
+                    </card>
+                    <card class="cards" id="dayTwo">
+                        <p class="weather" id="day2"></p>
+                        <div class="image"><img src="" class="imgClass" id="day2img"></div>
+                        <p class="temp" id="day2temp">Loading....</p>
+                        <p class="wind" id="day2wind">Loading....</p>
+                        <p class="humidity" id="day2humidity">Loading....</p>
+                    </card>
+                    <card class="cards" id="dayThree">
+                        <p class="weather" id="day3"></p>
+                        <div class="image"><img src="" class="imgClass" id="day3img"></div>
+                        <p class="temp" id="day3temp">Loading....</p>
+                        <p class="wind" id="day3wind">Loading....</p>
+                        <p class="humidity" id="day3humidity">Loading....</p>
+                    </card>
+                    <card class="cards" id="dayFour">
+                        <p class="weather" id="day4"></p>
+                        <div class="image"><img src="" class="imgClass" id="day4img"></div>
+                        <p class="temp" id="day4temp">Loading....</p>
+                        <p class="wind" id="day4wind">Loading....</p>
+                        <p class="humidity" id="day4humidity">Loading....</p>
+                    </card>
+                    <card class="cards" id="dayFive">
+                        <p class="weather" id="day5"></p>
+                        <div class="image"><img src="" class="imgClass" id="day5img"></div>
+                        <p class="temp" id="day5temp">Loading....</p>
+                        <p class="wind" id="day5wind">Loading....</p>
+                        <p class="humidity" id="day5humidity">Loading....</p>
+                    </card>
+                </div>
+            </div>
+        </section>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="./develop/script.js"></script>     
+    </body>
+</html>
