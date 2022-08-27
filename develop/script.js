@@ -1,6 +1,6 @@
 var apiKey = "0a1cf54009aa74cd34cd8068722976e4";
 var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=";
-//var uviURL = "https://api.openweathermap.org/data/3.0/onecall?q=";
+var uviURL = "https://api.openweathermap.org/data/3.0/onecall?q=";
 var uviURL = "https://api.openweathermap.org/data/2.5/uvi?";
 var fullToday = new Date(); //Todays date object
 var todayMonth = fullToday.getMonth(); //Current Month
